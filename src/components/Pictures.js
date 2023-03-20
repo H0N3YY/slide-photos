@@ -57,4 +57,3 @@ export const townsPhotos = [
     name: "Toruń",
   },
 ];
-console.log("1" + 1);
