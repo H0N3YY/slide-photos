@@ -1,12 +1,21 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2%;
   text-align: center;
 }
 
+
+button{
+
+  background-color: #f7f7f7;
+}
+button:active{
+  background-color: #c7753f;
+}
+
 h1 {
-  margin: 1rem auto 4rem;
+  margin: 2% ;
+  padding: 3%;
 }
 
 .town_image {
@@ -33,7 +42,7 @@ h1 {
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #000;
+  background-color: #a56337;
   text-align: center;
   cursor: pointer;
   width: 100%;
