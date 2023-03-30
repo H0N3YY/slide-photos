@@ -16,7 +16,7 @@ const Header = () => {
           <MapIcon />
         </IconButton>
         <Typography variant="h6" component="div">
-          TRAVELS IN POLAND
+          TRAVELS POL
         </Typography>
 
         <Stack direction="row" spacing={2}>
