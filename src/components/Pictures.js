@@ -56,4 +56,10 @@ export const townsPhotos = [
       "https://mynaszlaku.pl/wp-content/uploads/2020/06/torun-najciekawsze-miejsca0022.jpg",
     name: "Toruń",
   },
+  {
+    id: 7,
+    imageAdress:
+      "https://i.pinimg.com/564x/b1/6f/48/b16f48e62226b0cdc940b5f847604d9f.jpg",
+    name: "Gdańsk",
+  },
 ];

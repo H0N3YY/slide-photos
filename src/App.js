@@ -5,6 +5,7 @@ import { townsPhotos, responsive } from "./components/Pictures";
 import Towns from "./components/Towns";
 import Header from "./components/NavBar";
 import { Typography } from "@mui/material";
+import Gallery from "./components/Gallery";
 
 export default function App() {
   const product = townsPhotos.map((item) => (
@@ -21,8 +22,9 @@ export default function App() {
         {product}
       </Carousel>
       <Typography variant="h2" component="div" padding={2}>
-        
+        Nasza Galleria
       </Typography>
+      <Gallery />
     </div>
   );
 }
