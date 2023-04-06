@@ -1,7 +1,7 @@
-# INSTRUCTION
+## INSTRUCTION
 instal:
-@material-ui
-npm install
+> @material-ui
+> npm install
 
 # Getting Started with Create React App
 
