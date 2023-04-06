@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import MapIcon from "@mui/icons-material/Map";
 
+
 const Header = () => {
   return (
     <AppBar position="static">
@@ -19,7 +20,7 @@ const Header = () => {
           TRAVELS POL
         </Typography>
 
-        <Stack direction="row" spacing={2}>
+        <Stack direction="row" spacing={2}> 
           <Button color="inherit"> ZDJĘCIA </Button>
           <Button color="inherit"> KONTAKT </Button>
         </Stack>
