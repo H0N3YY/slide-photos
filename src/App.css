@@ -1,7 +1,11 @@
-#root {
+.App {
   margin: 0 auto;
   padding: 2%;
   text-align: center;
+}
+
+.carousel{
+  margin-top: 3%;
 }
 
 
@@ -31,4 +35,10 @@
 
 .card button:hover {
   opacity: 0.7;
+}
+.gallery{
+  background-color: rgb(39, 140, 255);
+  color: white;
+  margin-top: 3%;
+  
 }
