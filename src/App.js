@@ -17,7 +17,7 @@ export default function App() {
     <div className="App">
       <Header />
       <div className="carousel">
-        <Typography variant="h2" component="div" padding={2}>
+        <Typography variant="h2" component="div" padding={8}>
           Najlepsze Oferty na Weekend
         </Typography>
         <Carousel showDots={true} responsive={responsive}>
