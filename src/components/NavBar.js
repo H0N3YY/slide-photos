@@ -7,11 +7,11 @@ import {
   Button,
 } from "@mui/material";
 import MapIcon from "@mui/icons-material/Map";
-import { brown } from '@mui/material/colors';
+
 
 const Header = () => {
   return (
-    <AppBar position="static" sx={{backgroundColor: brown[400]}}>
+    <AppBar position="static">
       <Toolbar>
         <IconButton size="large" edge="start" color="inherit" aria-label="logo">
           <MapIcon />
