@@ -1,10 +1,11 @@
 import * as React from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
+import { brown } from '@mui/material/colors';
 
 export default function StandardImageList() {
   return (
-    <ImageList variant="masonry" cols={4} gap={8} >
+    <ImageList variant="masonry" cols={4} gap={8}  sx={{backgroundColor: brown[400]}}>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img
