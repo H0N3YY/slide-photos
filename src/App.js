@@ -21,7 +21,7 @@ export default function App() {
         <Typography variant="h2" component="div" padding={3} sx={{color: brown[900]}}>
           Najlepsze Oferty na Weekend
         </Typography>
-        <Carousel showDots={true} responsive={responsive}>
+        <Carousel showDots={false} responsive={responsive}>
           {product}
         </Carousel>
       </div>
