@@ -7,6 +7,7 @@ import "react-multi-carousel/lib/styles.css";
 import Towns from "./components/Towns";
 import Header from "./components/NavBar";
 import PhotoGallery from "./components/PhotoGallery";
+import { brown } from '@mui/material/colors';
 
 export default function App() {
   const product = townsPhotos.map((item) => (
@@ -14,10 +15,10 @@ export default function App() {
   ));
 
   return (
-    <div className="App">
+    <div className="App" >
       <Header />
       <div className="carousel">
-        <Typography variant="h2" component="div" padding={8}>
+        <Typography variant="h2" component="div" padding={1} sx={{color: brown[900]}}>
           Najlepsze Oferty na Weekend
         </Typography>
         <Carousel showDots={true} responsive={responsive}>

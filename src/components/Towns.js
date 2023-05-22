@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@mui/material";
+import { brown } from '@mui/material/colors';
 
 export default function Towns(props) {
   return (
@@ -7,7 +8,7 @@ export default function Towns(props) {
       <img className="town_image" src={props.url} alt="town" />
       <h2>{props.name}</h2>
       <p>
-        <Button> Sprawdź Oferte </Button>
+        <Button sx={{color: brown[800]}}> Sprawdź Oferte </Button>
       </p>
     </div>
   );
