@@ -6,9 +6,9 @@ import {
   Typography,
   Stack,
   Button,
-} from '@mui/material';
+} from "@mui/material";
+import MapIcon from "@mui/icons-material/Map";
 import { brown } from '@mui/material/colors';
-import MapIcon from '@mui/icons-material/Map';
 
 const Header = () => {
   const appBarStyle = {
@@ -25,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="static" sx={appBarStyle}>
+    <AppBar position="static" sx={{backgroundColor: brown[400]}}>
       <Toolbar>
         <IconButton
           size="large"

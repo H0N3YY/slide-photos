@@ -1,7 +1,7 @@
-import React from 'react';
-import { Box, Typography } from '@mui/material';
-import { grey, brown } from '@mui/material/colors';
-import StandardImageList from './ImageList';
+import { Box,Typography } from "@mui/material";
+import classes from "./PhotoGalleryStyle.css";
+import StandardImageList from "./ImageList";
+import { brown } from '@mui/material/colors';
 
 const PhotoGallery = () => {
   const galleryContainerStyle = {
@@ -22,12 +22,12 @@ const PhotoGallery = () => {
   };
 
   return (
-    <Box style={galleryContainerStyle}>
-      <Typography variant="h2" component="div" style={headingStyle}>
-        Nasza Galeria
+    <Box className={classes.gallery_container} sx={{backgroundColor: brown[400]}}>
+      <Typography variant="h2" component="div" padding={2}>
+        Nasza Galleria
       </Typography>
       <StandardImageList />
-    </Box>
+    </div>
   );
 };
 
