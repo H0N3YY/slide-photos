@@ -7,6 +7,8 @@ const PhotoGallery = () => {
   const galleryContainerStyle = {
     backgroundColor: grey[50],
     padding: '2rem',
+    borderRadius: '50',
+    boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)',
   };
 
   const headingStyle = {
@@ -16,6 +18,7 @@ const PhotoGallery = () => {
     marginBottom: '2rem',
     fontSize: '2rem',
     textAlign: 'center',
+    borderRadius: '50',
   };
 
   return (
