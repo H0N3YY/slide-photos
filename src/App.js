@@ -28,7 +28,7 @@ export default function App() {
       <Header />
       <div className="carousel">
         <Typography variant="h2" component="div" sx={carouselTitleStyle}>
-          Najlepsze Oferty na Weekend!
+          Najlepsze Oferty na Weekend!!
         </Typography>
         <Carousel showDots={false} responsive={responsive}>
           {product}
