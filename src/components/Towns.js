@@ -25,8 +25,14 @@ export default function Towns(props) {
   };
 
   const buttonStyle = {
+    '&:hover': {
+      bgcolor: brown[800],
+      color: 'white',
+    },
     color: brown[500],
     fontWeight: 'bold',
+    borderRadius: '4em',
+    width: '50%',
   };
 
   return (

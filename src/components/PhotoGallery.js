@@ -1,16 +1,16 @@
-import { Box,Typography } from "@mui/material";
-import classes from "./PhotoGalleryStyle.css";
+import { Box, Typography } from "@mui/material";
+import { brown } from "@mui/material/colors";
 import StandardImageList from "./ImageList";
-import { brown, grey } from '@mui/material/colors';
+import classes from "./PhotoGalleryStyle.css";
 
 const PhotoGallery = () => {
-  
-
   return (
-    <Box className={classes.gallery_container} sx={{backgroundColor: brown[400]}}>
-      <Typography variant="h2" component="div" padding={2}>
-        Nasza Galleria
-      </Typography>
+    <Box>
+      <Box className={classes.gallery_container} sx={{ backgroundColor: brown[400] }}>
+        <Typography variant="h2" component="div" className={classes.gallery_heading}>
+          Nasza Galeria
+        </Typography>
+      </Box>
       <StandardImageList />
     </Box>
   );
