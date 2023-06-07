@@ -5,7 +5,7 @@ import ImageListItem from "@mui/material/ImageListItem";
 
 export default function StandardImageList() {
   return (
-    <ImageList variant="masonry" cols={4} gap={20}  >
+    <ImageList variant="masonry" cols={4} gap={20} sx={{backgroundColor: 'none'}} >
       {itemData.map((item) => (
         <ImageListItem key={item.img} >
           <img
@@ -44,5 +44,45 @@ const itemData = [
   {
     img: "https://i.pinimg.com/564x/dc/2c/5d/dc2c5db3c4f8756babc7f06e541cefa0.jpg",
     title: "6 Photo",
+  },
+  {
+    img: "https://images.squarespace-cdn.com/content/v1/64203d9600825f68e2488772/e2b52774-1c2d-4aed-b42f-b7bfa5e740f2/Wroclaw-Poland-bronwyn-townsend--2.jpg",
+    title: "7 Photo",
+  },
+  {
+    img: "https://i.pinimg.com/736x/0a/ac/a0/0aaca03ca2f371011f716c5dd2773b95.jpg",
+    title: "8 Photo",
+  },
+  {
+    img: "https://i.pinimg.com/564x/fe/2b/4a/fe2b4a6190999453b0092b0c273ef1b2.jpg",
+    title: "9 Photo",
+  },
+  {
+    img: "https://i.pinimg.com/originals/fa/e5/e2/fae5e25d3b5cb4459cf000a46d31ab3c.jpg",
+    title: "10 Photo",
+  },
+  {
+    img: "https://i.pinimg.com/originals/f1/fe/07/f1fe07af66aeec291923e338531e97e0.jpg",
+    title: "11 Photo",
+  },
+  {
+    img: "https://i.pinimg.com/originals/4b/00/6b/4b006bd06b1d55c5b23a3d9fbe6fede3.jpg",
+    title: "12 Photo",
+  },
+   {
+    img: "https://i.pinimg.com/originals/88/4f/6c/884f6c4eeea46df830ff433479844cf6.jpg",
+    title: "13 Photo",
+  },
+  {
+    img: "https://i.pinimg.com/564x/0a/f4/bf/0af4bffd25d2c6be6f7baafd98ddd599.jpg",
+    title: "14 Photo",
+  },
+  {
+    img: "https://images.squarespace-cdn.com/content/v1/5980e801d482e93f58785fef/1598223671216-UX7SE6R6SI32KPXG5QZZ/green+and+yellow+buildings+in+warsaw+poland",
+    title: "15 Photo",
+  },
+  {
+    img: "https://chelseadinen.com/wp-content/uploads/2019/07/Rynek-Wroclaw-Poland-2.jpg",
+    title: "16 Photo",
   },
 ];
