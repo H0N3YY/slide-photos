@@ -4,7 +4,7 @@ import ImageListItem from "@mui/material/ImageListItem";
 
 export default function StandardImageList() {
   return (
-    <ImageList variant="masonry" cols={4} gap={20} sx={{ backgroundColor: 'white' }} >
+    <ImageList variant="masonry" cols={4} gap={20} sx={{ backgroundColor: 'white', margin: '10' }} >
       {itemData.map((item) => (
         <ImageListItem key={item.img} >
           <img
