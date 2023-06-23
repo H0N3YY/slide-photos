@@ -21,7 +21,7 @@ const ContactForm = () => {
 
     const buttonStyle = {
         '&:hover': {
-            backgroundColor: brown[800],
+            bgcolor: brown[800],
             color: 'white',
         },
         color: brown[500],
@@ -32,14 +32,14 @@ const ContactForm = () => {
 
     const headingStyle = {
         color: brown[900],
-        fontSize: '1.5rem',
+        fontSize: '3.5rem',
         fontWeight: 'bold',
         marginBottom: '0.5rem',
     };
 
     return (
         <div style={formStyle}>
-            <Typography variant="h4" gutterBottom style={headingStyle}>
+            <Typography style={headingStyle}>
                 Formularz kontaktowy
             </Typography>
             <form onSubmit={handleSubmit}>
@@ -88,7 +88,7 @@ const ContactForm = () => {
                         />
                     </Grid>
                     <Grid item xs={12}>
-                        <Button type="submit" variant="contained" color="primary" style={buttonStyle}>
+                        <Button style={buttonStyle}>
                             Wyślij wiadomość
                         </Button>
                     </Grid>
