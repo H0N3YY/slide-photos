@@ -9,6 +9,7 @@ import { brown } from '@mui/material/colors';
 import Towns from "./components/Towns";
 
 import './App.css';
+import ContactForm from './components/ContactForm';
 
 export default function App() {
   const product = townsPhotos.map((item) => (
@@ -37,6 +38,7 @@ export default function App() {
       <div className="gallery">
         <PhotoGallery />
       </div>
+      <ContactForm />
     </div>
   );
 }
