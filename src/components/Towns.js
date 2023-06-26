@@ -6,7 +6,6 @@ export default function Towns(props) {
   const cardStyle = {
     backgroundColor: '#FFFFFF',
     padding: '1rem',
-    borderRadius: '10px',
     boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)',
   };
 
