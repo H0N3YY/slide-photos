@@ -42,7 +42,7 @@ export default function Towns(props) {
           {props.name}
         </Typography>
         <p>
-          <Button sx={buttonStyle}>Sprawdź Ofertę</Button>
+          <Button sx={buttonStyle}>Check Offer!</Button>
         </p>
       </Box>
     </div>

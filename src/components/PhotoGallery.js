@@ -20,7 +20,7 @@ const PhotoGallery = () => {
     <Box style={formStyle}>
       <Box>
         <Typography style={headingStyle}>
-          Nasza Galeria
+          Our Gallery
         </Typography>
       </Box>
       <StandardImageList />

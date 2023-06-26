@@ -26,8 +26,8 @@ const ContactForm = () => {
         },
         color: brown[500],
         fontWeight: 'bold',
+        fontSize: '1.2rem',
         borderRadius: '4em',
-        width: '50%',
     };
 
     const headingStyle = {
@@ -40,7 +40,7 @@ const ContactForm = () => {
     return (
         <div style={formStyle}>
             <Typography style={headingStyle}>
-                Formularz kontaktowy
+                Contact Form
             </Typography>
             <form onSubmit={handleSubmit}>
                 <Grid container spacing={2}>
@@ -89,7 +89,7 @@ const ContactForm = () => {
                     </Grid>
                     <Grid item xs={12}>
                         <Button style={buttonStyle}>
-                            Wyślij wiadomość
+                        Send a message
                         </Button>
                     </Grid>
                 </Grid>
