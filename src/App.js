@@ -1,15 +1,18 @@
 import React from 'react';
+
 import { Typography } from '@mui/material';
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import Header from './components/NavBar';
-import PhotoGallery from './components/PhotoGallery';
-import { townsPhotos, responsive } from './components/TownPictures';
+import Carousel from 'react-multi-carousel';
 import { brown } from '@mui/material/colors';
+import { townsPhotos, responsive } from './components/TownPictures';
+
+import Header from './components/NavBar';
+import Footer from './components/Footer';
+import PhotoGallery from './components/PhotoGallery';
 import Towns from "./components/Towns";
+import ContactForm from './components/ContactForm';
 
 import './App.css';
-import ContactForm from './components/ContactForm';
 
 export default function App() {
   const product = townsPhotos.map((item) => (
@@ -30,20 +33,23 @@ export default function App() {
   };
 
   return (
-    <div className="App">
+    <div>
       <Header />
-      <div style={formStyle}>
-        <Typography variant="h2" component="div" sx={carouselTitleStyle}>
-          Best Weekend Deals!
-        </Typography>
-        <Carousel showDots={false} responsive={responsive}>
-          {product}
-        </Carousel>
+      <div className="App">
+        <div style={formStyle}>
+          <Typography variant="h2" component="div" sx={carouselTitleStyle}>
+            Best Weekend Deals!
+          </Typography>
+          <Carousel showDots={false} responsive={responsive}>
+            {product}
+          </Carousel>
+        </div>
+        <div className="gallery">
+          <PhotoGallery />
+        </div>
+        <ContactForm />
       </div>
-      <div className="gallery">
-        <PhotoGallery />
-      </div>
-      <ContactForm />
+      <Footer />
     </div>
   );
 }
