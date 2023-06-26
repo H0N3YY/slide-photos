@@ -11,9 +11,6 @@ import MapIcon from "@mui/icons-material/Map";
 import { brown } from '@mui/material/colors';
 
 const Header = () => {
-  const appBarStyle = {
-    backgroundColor: brown[400],
-  };
 
   const logoStyle = {
     marginRight: '1rem',
@@ -25,7 +22,7 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="static" sx={{backgroundColor: brown[400]}}>
+    <AppBar position="static" sx={{ backgroundColor: brown[400] }}>
       <Toolbar>
         <IconButton
           size="large"
@@ -37,11 +34,11 @@ const Header = () => {
           <MapIcon />
         </IconButton>
         <Typography variant="h6" component="div" style={titleStyle}>
-          TRAVELS POL
+          POLAND TRAVELS
         </Typography>
         <Stack direction="row" spacing={2}>
-          <Button color="inherit">ZDJĘCIA</Button>
-          <Button color="inherit">KONTAKT</Button>
+          <Button color="inherit">Gallery</Button>
+          <Button color="inherit">Contact</Button>
         </Stack>
       </Toolbar>
     </AppBar>

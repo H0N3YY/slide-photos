@@ -9,9 +9,9 @@ const ContactForm = () => {
     };
 
     const formStyle = {
-        backgroundColor: '#F5F5F5',
-        padding: '1rem',
-        borderRadius: '10px',
+        backgroundColor: '#FFFFFF',
+        padding: '4rem',
+        marginTop: '4rem',
         boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)',
     };
 
@@ -26,13 +26,13 @@ const ContactForm = () => {
         },
         color: brown[500],
         fontWeight: 'bold',
+        fontSize: '1.2rem',
         borderRadius: '4em',
-        width: '50%',
     };
 
     const headingStyle = {
         color: brown[900],
-        fontSize: '3.5rem',
+        fontSize: '2.5rem',
         fontWeight: 'bold',
         marginBottom: '0.5rem',
     };
@@ -40,7 +40,7 @@ const ContactForm = () => {
     return (
         <div style={formStyle}>
             <Typography style={headingStyle}>
-                Formularz kontaktowy
+                Contact Form
             </Typography>
             <form onSubmit={handleSubmit}>
                 <Grid container spacing={2}>
@@ -89,7 +89,7 @@ const ContactForm = () => {
                     </Grid>
                     <Grid item xs={12}>
                         <Button style={buttonStyle}>
-                            Wyślij wiadomość
+                        Send a message
                         </Button>
                     </Grid>
                 </Grid>

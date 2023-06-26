@@ -3,18 +3,19 @@ import { Button, Box, Typography } from '@mui/material';
 import { brown } from '@mui/material/colors';
 
 export default function Towns(props) {
+
   const cardStyle = {
-    backgroundColor: '#F5F5F5',
+    backgroundColor: '#FFFFFF',
     padding: '1rem',
-    borderRadius: '10px',
     boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)',
+    marginTop: '1rem',
+    marginBottom: '1rem',
   };
 
   const townImageStyle = {
     width: '80',
     height: '80',
     marginBottom: '1rem',
-    borderRadius: '5px',
   };
 
   const townNameStyle = {
@@ -43,7 +44,7 @@ export default function Towns(props) {
           {props.name}
         </Typography>
         <p>
-          <Button sx={buttonStyle}>Sprawdź Ofertę</Button>
+          <Button sx={buttonStyle}>Check Offer!</Button>
         </p>
       </Box>
     </div>

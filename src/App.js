@@ -24,12 +24,17 @@ export default function App() {
     textAlign: 'center',
   };
 
+  const formStyle = {
+    marginTop: '2rem',
+    marginBottom: '1rem',
+  };
+
   return (
     <div className="App">
       <Header />
-      <div className="carousel">
+      <div style={formStyle}>
         <Typography variant="h2" component="div" sx={carouselTitleStyle}>
-          Najlepsze Oferty na Weekend!!
+          Best Weekend Deals!
         </Typography>
         <Carousel showDots={false} responsive={responsive}>
           {product}
