@@ -1,10 +1,33 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 
 export default function StandardImageList() {
+  const [columns, setColumns] = useState(4);
+  const [gap, setGap] = useState(20);
+
+  useEffect(() => {
+    function updateLayout() {
+      const isSmallScreen = window.innerWidth < 600;
+      if (isSmallScreen) {
+        setColumns(1);
+        setGap(10);
+      } else {
+        setColumns(4);
+        setGap(20);
+      }
+    }
+
+    updateLayout();
+
+    window.addEventListener("resize", updateLayout);
+    return () => {
+      window.removeEventListener("resize", updateLayout);
+    };
+  }, []);
+
   return (
-    <ImageList variant="masonry" cols={4} gap={20} sx={{ backgroundColor: 'white', margin: '10' }} >
+    <ImageList variant="masonry" cols={columns} gap={gap} sx={{ backgroundColor: 'white', margin: '10' }} >
       {itemData.map((item) => (
         <ImageListItem key={item.img} >
           <img

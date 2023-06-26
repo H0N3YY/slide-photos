@@ -13,7 +13,6 @@ export default function Towns(props) {
     width: '80',
     height: '80',
     marginBottom: '1rem',
-    borderRadius: '5px',
   };
 
   const townNameStyle = {
