@@ -3,10 +3,13 @@ import { Button, Box, Typography } from '@mui/material';
 import { brown } from '@mui/material/colors';
 
 export default function Towns(props) {
+
   const cardStyle = {
     backgroundColor: '#FFFFFF',
     padding: '1rem',
     boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)',
+    marginTop: '1rem',
+    marginBottom: '1rem',
   };
 
   const townImageStyle = {
