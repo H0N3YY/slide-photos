@@ -35,12 +35,14 @@ export default function StandardImageList() {
             srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
             alt={item.title}
             loading="lazy"
+            style={{ width: "400px", height: "500px", objectFit: "cover" }}
           />
         </ImageListItem>
       ))}
     </ImageList>
   );
 }
+
 
 const itemData = [
   {
