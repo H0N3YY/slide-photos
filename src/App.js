@@ -11,8 +11,10 @@ import Footer from './components/Footer';
 import PhotoGallery from './components/PhotoGallery';
 import Towns from "./components/Towns";
 import ContactForm from './components/ContactForm';
+import MainDescription from './components/MainDescription';
 
 import './App.css';
+
 
 export default function App() {
   const product = townsPhotos.map((item) => (
@@ -36,6 +38,7 @@ export default function App() {
     <div>
       <Header />
       <div className="App">
+        <MainDescription />
         <div style={formStyle}>
           <Typography variant="h2" component="div" sx={carouselTitleStyle}>
             Best Weekend Deals!
